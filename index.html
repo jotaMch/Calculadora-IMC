@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="main4.css">
+</head>
+<body>
+<div class="container">
+    <h1>
+        Cálculo IMC
+    </h1>
+    <p>
+        IMC é a sigla para Índice de Massa Corpórea, parâmetro 
+        adotado pela Organização Mundial de Saúde para calcular o peso ideal de cada pessoa.
+        O índice é calculado da seguinte maneira: divide-se o peso
+        do paciente pela sua altura elevada ao quadrado. Diz-se que o indivíduo tem 
+        peso normal quando o resultado do IMC está entre 18,5 e 24,9.
+        Quer descobrir seu IMC? Insira seu peso e sua altura nos campos abaixo e 
+        compare com os índices da tabela. Importante: siga os exemplos e use pontos como separadores.
+    </p>
+    <form class="form">
+        <div class="flex">
+            <div class="inputs">
+                <label for="altura">Altura (ex.: 1.70)</label>
+                <input type="number" name="altura" step="any" id="altura">
+            </div>
+    
+            <div class="inputs">
+                <label for="peso">Peso (ex.:69.2)</label>
+                <input type="number" name="peso" step="any" id="peso">
+            </div>
+        </div>
+        <div class="btn">
+            <button type="submit">Concluir</button>
+            <button onclick="reset()" type="reset">Reset</button>
+        </div>
+    </form>
+    <table>
+        <tr class="cabecalho">
+            <th>IMC</th>
+            <th>CLASSIFICAÇÂO</th>
+            <th>GRAU</th>
+        </tr>
+
+
+        <tr>
+            <th>MENOR QUE 18,5</th>
+            <th>ABAIXO DO PESO</th>
+            <th>O</th>
+        </tr>
+
+
+        <tr>
+            <th>ENTRE 18,5 E 24,9</th>
+            <th>NORMAL</th>
+            <th>O</th>
+        </tr>
+
+
+        <tr>
+            <th>ENTRE 25,0 E 29,9</th>
+            <th>SOBREPESO</th>
+            <th>I</th>
+        </tr>
+
+
+        <tr>
+            <th>ENTRE 30,0 E 39,9</th>
+            <th>OBESIDADE</th>
+            <th>II</th>
+        </tr>
+
+
+        <tr>
+            <th>MAIOR QUE 40,0</th>
+            <th>OBESIDADE GRAVE</th>
+            <th>III</th>
+        </tr>
+    </table>
+    <p id="resultado">Resultado: </p>
+</div>
+<footer>
+    &copy; 2023 Desenvolvido por Jânderson. Todos os direitos reservados
+</footer>
+    <script src="aula4.js"></script>
+</body>
+</html>
+
+<!---
+o cliente vai ter que fazer uma avaliação antes do procedimento escolhido
+o agendamento tem que ser feito de 30 em 30 minutos
+seção para do doutor e mais 4 dentistas
+vagas por mês até 50
+ele quer que a logo gire
+-->
+
+
